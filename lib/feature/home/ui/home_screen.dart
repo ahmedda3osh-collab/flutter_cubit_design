@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("User Account"),
+        title:  Text("User Account"),
         centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
@@ -18,17 +18,17 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: BlocListener<HomeCubit, HomeState>(
-            listener: (context, state) {
+          padding:  EdgeInsets.all(24.0),
+           
+            child: BlocConsumer<HomeCubit, HomeState>(
+                          listener: (context, state) {
               if(state.isFollowing){
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("1 Follower Added")));
               }
             },
-            child: BlocBuilder<HomeCubit, HomeState>(
               builder: (context, state) {
                 return Container(
-                  padding: const EdgeInsets.all(20),
+                  padding:  EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(24),
@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const CircleAvatar(
+                       CircleAvatar(
                         radius: 50,
                         backgroundColor: Colors.blueAccent,
                         child: Icon(
@@ -52,20 +52,20 @@ class HomeScreen extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      const SizedBox(height: 16),
-                      const Text(
+                       SizedBox(height: 16),
+                       Text(
                         "Ahmed Da3osh",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(height: 4),
-                      const Text(
+                       SizedBox(height: 4),
+                       Text(
                         "Flutter Developer",
                         style: TextStyle(color: Colors.grey, fontSize: 14),
                       ),
-                      const SizedBox(height: 24),
+                       SizedBox(height: 24),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -73,13 +73,13 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "${state.followersCount}",
-                                style: const TextStyle(
+                                style:  TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const SizedBox(height: 4),
-                              const Text(
+                               SizedBox(height: 4),
+                               Text(
                                 "المتابِعين",
                                 style: TextStyle(
                                   color: Colors.grey,
@@ -88,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const Column(
+                           Column(
                             children: [
                               Text(
                                 "45K",
@@ -109,7 +109,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 24),
+                       SizedBox(height: 24),
                       SizedBox(
                         width: double.infinity,
                         height: 50,
@@ -137,10 +137,10 @@ class HomeScreen extends StatelessWidget {
                                     ? Icons.check
                                     : Icons.person_add,
                               ),
-                              const SizedBox(width: 8),
+                               SizedBox(width: 8),
                               Text(
                                 state.isFollowing ? "Following" : "Follow",
-                                style: const TextStyle(
+                                style:  TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -156,7 +156,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+      );
+    
   }
 }
