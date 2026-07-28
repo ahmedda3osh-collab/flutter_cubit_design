@@ -1,17 +1,8 @@
-# simple_designe
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<img width="720" height="1600" alt="Screenshot_٢٠٢٦٠٧٢٨-١٦٤٢٣٧" src="https://github.com/user-attachments/assets/64749559-a2f8-4f74-9d4c-37a0af899bd9" />
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="720" height="1600" alt="Screenshot_٢٠٢٦٠٧٢٨-١٦٤٢٤٨" src="https://github.com/user-attachments/assets/f4f749d6-b2b9-4566-8b44-5c048bbbe5bf" />
