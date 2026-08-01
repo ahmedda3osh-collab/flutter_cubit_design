@@ -1,0 +1,11 @@
+
+
+{
+    "t":"t",
+    "appBarTitle": "User Account",
+    "views": "Views",
+    "followers": "Followers",
+    "follow" : "Follow",
+    "following" : "Following",
+    "1 follower added" : "1 Follower Added"
+}
